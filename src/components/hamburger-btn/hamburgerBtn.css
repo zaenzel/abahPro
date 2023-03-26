@@ -1,0 +1,17 @@
+/* hamburger */
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-[#7A61FD] transition ease-in-out duration-300 origin-top-left;
+}
+
+.hamburger-line.clicked:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-line.clicked:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-line.clicked:nth-child(3) {
+    @apply -rotate-45 origin-bottom-left;
+}

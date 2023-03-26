@@ -1,0 +1,7 @@
+.container-nav {
+    @apply w-full hidden fixed z-10 sm:flex justify-between px-5 py-2
+}
+
+.logo-nav {
+    @apply flex items-center font-bold text-lg
+}
