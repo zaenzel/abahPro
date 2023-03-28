@@ -1,5 +1,5 @@
 .container-recomendPro{
-    @apply p-5 
+    @apply p-5 xl:px-14
 }
 
 .wrap-items-recomendPro{
@@ -27,5 +27,5 @@
 }
 
 .wrap-cardPro{
-    @apply flex flex-wrap gap-5 xl:justify-between
+    @apply flex items-center flex-wrap gap-5 xl:justify-between
 }

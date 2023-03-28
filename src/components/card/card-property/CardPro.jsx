@@ -6,9 +6,9 @@ import SingleBedIcon from "@mui/icons-material/SingleBed";
 import BathtubIcon from "@mui/icons-material/Bathtub";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 
-const CardPro = () => {
+const CardPro = ({secondItem}) => {
   return (
-    <div className="container-cardPro">
+    <div className={`container-cardPro ${secondItem && 'border-2 rounded-2xl border-color-tersier xl:mb-10'}`}>
       <div className="wrap-items-cardPro">
         <img src={imagePro} alt="propety-image" className="image-cardPro" />
         <div className="desc-cardPro">

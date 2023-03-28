@@ -14,9 +14,9 @@ const RecomendPro = () => {
           <p className="left-title-recomendPro">Lihat Lebih...</p>
         </div>
         <div className="wrap-cardPro">
-            <CardPro />
-            <CardPro />
-            <CardPro />
+          <CardPro />
+          <CardPro secondItem={true} />
+          <CardPro />
         </div>
       </div>
     </section>

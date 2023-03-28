@@ -1,9 +1,9 @@
 .container-hero{
-    @apply p-5
+    @apply p-5 xl:px-28
 }
 
 .wrap-hero{
-    @apply flex flex-wrap-reverse items-center gap-5 sm:space-y-0
+    @apply flex flex-wrap-reverse items-center gap-5 sm:gap-14 sm:space-y-0
 }
 
 .wrap-img-profile{
