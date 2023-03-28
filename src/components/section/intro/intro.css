@@ -1,0 +1,15 @@
+.container-hero{
+    @apply p-5
+}
+
+.wrap-hero{
+    @apply flex flex-wrap-reverse items-center gap-5 sm:space-y-0
+}
+
+.wrap-img-profile{
+    @apply w-full flex justify-center sm:flex-1 self-end
+}
+
+.wrap-desc-profile{
+    @apply w-full space-y-3 sm:flex-1
+}

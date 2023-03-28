@@ -1,0 +1,3 @@
+.btn-default-style {
+    @apply bg-color-sekunder px-5 py-3 rounded-lg text-white font-semibold hover:bg-opacity-90
+}

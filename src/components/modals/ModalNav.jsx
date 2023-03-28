@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../button/Button";
 import "./modalNav.css";
 
 const ModalNav = ({ menu }) => {
@@ -8,7 +9,7 @@ const ModalNav = ({ menu }) => {
         <li>Daftar Propeti</li>
         <li>Tentang Kami</li>
         <li>
-          <button className="btn-call-modal">Hubungi Kami</button>
+          <Button word={"Hubungi Kami"} />
         </li>
       </ul>
     </div>

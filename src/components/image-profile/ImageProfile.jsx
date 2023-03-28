@@ -1,6 +1,6 @@
 import React from "react";
 
-const ImageProfile = ({src, border}) => {
+const ImageProfile = ({ src, border }) => {
   return (
     <div className="relative">
       <img src={border} alt="" as="svg" className="absolute w-full -z-10" />

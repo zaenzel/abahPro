@@ -1,0 +1,31 @@
+.container-recomendPro{
+    @apply p-5 
+}
+
+.wrap-items-recomendPro{
+    @apply space-y-5 sm:space-y-10
+}
+
+.wrap-title-recomendPro{
+    @apply flex justify-between items-start 
+}
+
+.right-title-recomendPro{
+    @apply flex flex-col gap-[6px]
+}
+
+.right-title-recomendPro h1{
+    @apply text-2xl font-bold
+}
+
+.right-title-recomendPro p{
+    @apply text-base opacity-50 font-medium
+}
+
+.left-title-recomendPro{
+    @apply hidden sm:block text-lg font-medium cursor-pointer hover:text-color-tersier
+}
+
+.wrap-cardPro{
+    @apply flex flex-wrap gap-5 xl:justify-between
+}

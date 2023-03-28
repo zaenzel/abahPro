@@ -1,7 +1,19 @@
 .container-nav {
-    @apply w-full hidden fixed z-10 sm:flex justify-between px-5 py-2
+    @apply  z-10 flex justify-between px-5 py-3
 }
 
 .logo-nav {
-    @apply flex items-center font-bold text-lg
+    @apply flex items-center justify-between w-full
+}
+
+.title {
+    @apply font-bold text-lg
+}
+
+.items-nav {
+    @apply flex items-center gap-14 md:gap-20
+}
+
+.items-nav li:not(:last-child) {
+    @apply cursor-pointer py-2 border-b-0 hover:border-b-2 border-color-sekunder
 }

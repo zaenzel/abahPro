@@ -4,10 +4,12 @@ import Navbar from "../../components/navbar/Navbar";
 
 const Layout = () => {
   return (
-    <div>
-      <Navbar />
-      <div className="sm:pt-16">
-        <Outlet />
+    <div className="flex justify-center">
+      <div className="max-w-screen-xl">
+        <Navbar />
+        <div className="sm:pt-5">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

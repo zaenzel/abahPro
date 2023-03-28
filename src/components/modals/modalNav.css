@@ -1,5 +1,5 @@
 .menu {
-    @apply absolute top-5 right-10 px-3 py-2 bg-white rounded w-max shadow-md
+    @apply absolute top-14 right-0 px-3 py-2 bg-white rounded w-max shadow-xl z-10
 }
 
 .hide {
@@ -14,14 +14,10 @@
     @apply text-sm
 }
 
-li{
+.wrap-items li{
     @apply flex flex-col items-center py-3 text-sm
 }
 
-li:not(:last-child){
+.wrap-items li:not(:last-child){
     @apply border-b border-b-gray-400
-}
-
-.btn-call-modal{
-    @apply bg-color-sekunder px-5 py-3 rounded-sm text-white
 }
