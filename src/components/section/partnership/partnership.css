@@ -1,0 +1,19 @@
+.container-partnership {
+    @apply relative bg-[url('/images/townhouse.jpg')] bg-fixed bg-cover z-10 rounded-xl
+}
+
+.backdrop{ 
+    @apply w-full h-full bg-black absolute opacity-60 -z-10 rounded-xl
+}
+
+.wrap-partnerships {
+    @apply flex flex-col items-center gap-10 py-10 lg:px-10 z-10 text-white
+}
+
+.title-partnership {
+    @apply text-3xl lg:text-6xl font-bold 
+}
+
+.wrap-items-prartnership {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 sm:gap-10
+}
