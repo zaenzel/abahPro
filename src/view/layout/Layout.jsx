@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div className="flex flex-col items-center">
       <Navbar />
-      <div className="max-w-screen-xl">
+      <div className="max-w-screen-xl py-10 sm:py-14">
         <div className="sm:pt-5">
           <Outlet />
         </div>

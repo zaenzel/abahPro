@@ -1,5 +1,5 @@
 .container-nav {
-    @apply  z-10 w-full flex justify-between px-5 py-3 max-w-screen-2xl
+    @apply fixed top-0 z-20 bg-white w-full flex justify-between px-5 py-3 max-w-screen-2xl transition-all
 }
 
 .logo-nav {
