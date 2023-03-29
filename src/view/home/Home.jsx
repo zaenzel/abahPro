@@ -1,5 +1,6 @@
 import React from "react";
 import Intro from "../../components/section/intro/Intro";
+import Offer from "../../components/section/offer/Offer";
 import Partnership from "../../components/section/partnership/Partnership";
 import RecomendPro from "../../components/section/recomend-propety/RecomendPro";
 import Since from "../../components/section/since/Since";
@@ -11,7 +12,7 @@ const Home = () => {
       <RecomendPro />
       <Since />
       <Partnership />
-      <div className="h-screen"></div>
+      <Offer />
     </div>
   );
 };

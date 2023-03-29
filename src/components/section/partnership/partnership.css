@@ -3,7 +3,7 @@
 }
 
 .backdrop{ 
-    @apply w-full h-full bg-black absolute opacity-60 -z-10 rounded-xl
+    @apply w-full h-full bg-black absolute opacity-70 -z-10 rounded-xl
 }
 
 .wrap-partnerships {

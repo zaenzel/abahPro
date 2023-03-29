@@ -1,0 +1,31 @@
+.container-cardOffer {
+    @apply bg-gradient-to-br from-white to-[#67BAA6] rounded-sm shadow-md
+}
+
+.wrap-cardOffer {
+    @apply relative flex justify-end px-10 py-3
+}
+
+.desc-offer {
+    @apply absolute top-0 left-5 sm:left-10 h-full flex flex-col justify-around
+}
+
+.text-cardOffer {
+    @apply space-y-3
+}
+
+.text-cardOffer h1 {
+    @apply text-2xl sm:text-3xl font-semibold text-color-sekunder
+}
+
+.text-cardOffer p{
+    @apply hidden sm:block text-color-19191A
+}
+
+.image-cardOffer {
+    @apply self-end
+}
+
+.btn-offer {
+    @apply w-fit py-2 sm:py-3 px-4 sm:px-5 rounded-lg bg-color-sekunder text-sm sm:text-lg text-white font-semibold hover:bg-opacity-90
+}
