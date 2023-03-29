@@ -1,5 +1,5 @@
 import HolidayVillageIcon from "@mui/icons-material/HolidayVillage";
-import PropetyInfo from "../../propety-info/PropetyInfo";
+import IconText from "../../icon-text/IconText";
 import "./partnership.css";
 
 const Partnership = () => {
@@ -11,10 +11,10 @@ const Partnership = () => {
         <div className="wrap-items-prartnership">
           {[...Array(12)].map((e, i) => {
             return (
-              <PropetyInfo key={i}>
+              <IconText key={i}>
                 <HolidayVillageIcon fontSize="large" />
                 <h5 className="text-base sm:text-xl lg:text-4xl">Tabebuya</h5>
-              </PropetyInfo>
+              </IconText>
             );
           })}
         </div>

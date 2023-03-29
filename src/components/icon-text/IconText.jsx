@@ -1,6 +1,6 @@
 import React, { Children } from "react";
 
-const PropetyInfo = ({ children, gray }) => {
+const IconText = ({ children, gray }) => {
   return (
       <div
         className={`flex gap-1 text-sm items-center font-medium ${
@@ -14,4 +14,4 @@ const PropetyInfo = ({ children, gray }) => {
   );
 };
 
-export default PropetyInfo;
+export default IconText;

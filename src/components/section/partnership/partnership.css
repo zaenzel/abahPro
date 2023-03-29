@@ -1,9 +1,9 @@
 .container-partnership {
-    @apply relative bg-[url('/images/townhouse.jpg')] bg-fixed bg-cover z-10 rounded-xl
+    @apply relative bg-[url('/images/townhouse.jpg')] bg-fixed bg-cover z-10 xl:rounded-xl
 }
 
 .backdrop{ 
-    @apply w-full h-full bg-black absolute opacity-70 -z-10 rounded-xl
+    @apply w-full h-full bg-black absolute opacity-70 -z-10 xl:rounded-xl
 }
 
 .wrap-partnerships {
