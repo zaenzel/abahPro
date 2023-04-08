@@ -6,9 +6,13 @@ import BathtubIcon from "@mui/icons-material/Bathtub";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 import IconText from "../../icon-text/IconText";
 
-const CardPro = ({secondItem}) => {
+const CardPro = ({ secondItem }) => {
   return (
-    <div className={`container-cardPro ${secondItem && 'border-2 rounded-2xl border-color-tersier xl:mb-10'}`}>
+    <div
+      className={`container-cardPro ${
+        secondItem && "border-2 rounded-2xl border-color-tersier xl:mb-10"
+      }`}
+    >
       <div className="wrap-items-cardPro">
         <img src={imagePro} alt="propety-image" className="image-cardPro" />
         <div className="desc-cardPro">

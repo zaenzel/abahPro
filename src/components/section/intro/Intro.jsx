@@ -13,7 +13,15 @@ const Intro = () => {
     gsap.fromTo(
       textHero,
       { x: -200, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1 }
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 0.2,
+        repeat: 100,
+        yoyo: true,
+        ease: "power1.in",
+      }
     );
   }, []);
 
@@ -33,7 +41,11 @@ const Intro = () => {
         </div>
 
         <div className="wrap-img-profile">
-          <ImageProfile src={imageProfile} border={border} />
+          <ImageProfile
+            src={imageProfile}
+            border={border}
+            ref={(e) => (imageHero = e)}
+          />
         </div>
       </div>
     </section>

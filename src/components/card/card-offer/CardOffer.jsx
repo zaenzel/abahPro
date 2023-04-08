@@ -1,7 +1,10 @@
+import { gsap } from "gsap";
 import Button from "../../button/Button";
 import "./cardOffer.css";
+import { useEffect, useRef } from "react";
 
 const CardOffer = ({ image, title, desc, buttonText }) => {
+
   return (
     <div className="container-cardOffer">
       <div className="wrap-cardOffer">
@@ -17,7 +20,13 @@ const CardOffer = ({ image, title, desc, buttonText }) => {
           </div>
           <Button word={buttonText} customStyle={`btn-offer`} />
         </div>
-        <img src={image} alt="" className="image-cardOffer" width={300} as="svg" />
+        <img
+          src={image}
+          alt=""
+          className="image-cardOffer"
+          width={300}
+          as="svg"
+        />
       </div>
     </div>
   );
