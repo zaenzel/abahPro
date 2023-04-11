@@ -9,15 +9,14 @@ const Offer = () => {
       <div className="wrap-offer">
         <CardOffer
           image={consultation}
-          title={"Konsultasi Properti"}
-          desc={true}
-          buttonText={"Mulai Konsultasi"}
+          title={"Butuh Penjelasan Langsung Konsultasi Tentang Properti?"}
+          buttonText={"Ngobrol Langsung"}
         />
 
         <CardOffer
           image={coorporation}
-          title={"Ingin Berkerjasama?"}
-          buttonText={"Ajukan Kerjasama"}
+          title={"Ingin Kerja Sama atau Menjadi Mitra?"}
+          buttonText={"Hubungi Kami"}
         />
       </div>
     </div>

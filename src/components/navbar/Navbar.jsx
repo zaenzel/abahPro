@@ -3,6 +3,7 @@ import Button from "../button/Button";
 import HamburgerBtn from "../hamburger-btn/HamburgerBtn";
 import ModalNav from "../modals/ModalNav";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -23,19 +24,6 @@ const Navbar = () => {
     setIsMenuClicked(!isMenuClicked);
   };
 
-  const controlNavbar = () => {
-    if (window.scrollY > 100) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-  };
-
-  useState(() => {
-    window.addEventListener("scroll", controlNavbar);
-    return window.removeEventListener("scroll", controlNavbar);
-  }, []);
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -45,14 +33,15 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible, setVisible]);
 
   return (
     <nav className={`container-nav ${visible ? "top" : "hidden"}`}>
       <div className="logo-nav">
-        <h1 className="title">AbahPro</h1>
+        <h1 className="title">
+          <Link to={"/"}>AbahPro</Link>
+        </h1>
         <ul className="items-nav hidden sm:flex">
           <li>Daftar Propeti</li>
           <li>Tentang Kami</li>

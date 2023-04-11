@@ -1,5 +1,5 @@
 .container-cardOffer {
-    @apply bg-gradient-to-br from-white to-[#67BAA6] rounded-sm shadow-md
+    @apply bg-[#F9F9F9] rounded-sm shadow-md
 }
 
 .wrap-cardOffer {
@@ -7,15 +7,11 @@
 }
 
 .desc-offer {
-    @apply absolute top-0 left-5 sm:left-10 h-full flex flex-col justify-around
-}
-
-.text-cardOffer {
-    @apply space-y-3
+    @apply absolute top-0 left-5 sm:left-10 h-full sm:w-1/2 flex flex-col justify-around z-10
 }
 
 .text-cardOffer h1 {
-    @apply text-2xl sm:text-3xl font-semibold text-color-sekunder
+    @apply text-xl sm:text-xl font-semibold text-color-19191A
 }
 
 .text-cardOffer p{
@@ -23,7 +19,7 @@
 }
 
 .image-cardOffer {
-    @apply self-end
+    @apply opacity-50 sm:opacity-100
 }
 
 .btn-offer {

@@ -4,6 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }

@@ -1,8 +1,9 @@
 import React from "react";
 import CardPro from "../../card/card-property/CardPro";
-import "./recomendPro.css";
+import "./cardListing.css";
+import { Link } from "react-router-dom";
 
-const RecomendPro = () => {
+const RecomendPro = ({ recomendPro }) => {
   return (
     <section className="container-recomendPro">
       <div className="wrap-items-recomendPro">
@@ -11,12 +12,18 @@ const RecomendPro = () => {
             <h1>Rekomendasi Properti</h1>
             <p>Beberapa properti yang terbaik</p>
           </div>
-          <p className="left-title-recomendPro">Lihat Lebih...</p>
+          <p className={`${!recomendPro && "hidden"} left-title-recomendPro`}>
+            <Link to={"list"}>Lihat Lebih...</Link>
+          </p>
         </div>
         <div className="wrap-cardPro">
-          <CardPro />
-          <CardPro secondItem={true} />
-          <CardPro />
+          {recomendPro
+            ? [...Array(3)].map((e,i) => {
+                return <CardPro favPro={i == 1 && true} key={i} />;
+              })
+            : [...Array(10)].map((i) => {
+                return <CardPro key={i} />;
+              })}
         </div>
       </div>
     </section>
