@@ -1,0 +1,7 @@
+.desc-detail {
+    @apply px-5 flex flex-col gap-3
+}
+
+.title-desc {
+    @apply text-xl sm:text-xl lg:text-3xl font-bold
+}

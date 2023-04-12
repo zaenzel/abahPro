@@ -1,38 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "better-react-carousel";
-import home from "/images/rumah.jpg";
+import {
+  ArrowBackIosNewOutlined,
+  ArrowBackIosOutlined,
+  ArrowForwardIosOutlined,
+  FiberManualRecord,
+  FiberManualRecordOutlined,
+} from "@mui/icons-material";
+import "./slider.css";
 
-const Slider = () => {
-  const MyDots = ({ isActive }) => (
-    <span
-      className={`inline-block rounded-full mt-5 ${
-        isActive ? "h-4 w-4 bg-color-sekunder" : "h-2 w-2 bg-color-ADADAD"
-      }`}
-    ></span>
-  );
+const Slider = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === images.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const gotoSlide = (index) => {
+    setCurrentIndex(index);
+  };
 
   return (
-    <div className="py-3">
-      <Carousel
-        cols={1}
-        rows={1}
-        gap={5}
-        showDots
-        dot={MyDots}
-      >
-        {[...Array(5)].map((e, i) => {
+    <div className="py-5 relative group">
+      <img src={images[currentIndex]} alt="" className="image-detail" />
+      <div className="next-slide" onClick={nextSlide}>
+        <ArrowForwardIosOutlined />
+      </div>
+      <div className="prev-slide" onClick={prevSlide}>
+        <ArrowBackIosOutlined />
+      </div>
+      <div className="wrap-dot-slide">
+        {images.map((e, i) => {
           return (
-            <Carousel.Item key={i}>
-              <img
-                className="w-full min-h-72 max-h-80 rounded-2xl object-cover lg:object-cover"
-                alt=""
-                src={home}
-              />
-            </Carousel.Item>
+            <div
+              className={`item-dot-slide ${
+                currentIndex === i ? "opacity-100 scale-125" : "opacity-40"
+              }`}
+              key={i}
+              onClick={() => {
+                gotoSlide(i);
+              }}
+            >
+              <FiberManualRecord sx={{ fontSize: "12px" }} />
+            </div>
           );
         })}
-      </Carousel>
-    </div>
+      </div>
+    </div>  
   );
 };
 
