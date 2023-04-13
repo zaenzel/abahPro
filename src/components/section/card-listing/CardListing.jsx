@@ -2,8 +2,10 @@ import React from "react";
 import CardPro from "../../card/card-property/CardPro";
 import "./cardListing.css";
 import { Link } from "react-router-dom";
+import properti from "../../../properti";
 
 const RecomendPro = ({ recomendPro }) => {
+  const dataPro = properti
   return (
     <section className="container-recomendPro">
       <div className="wrap-items-recomendPro">
@@ -18,11 +20,13 @@ const RecomendPro = ({ recomendPro }) => {
         </div>
         <div className="wrap-cardPro">
           {recomendPro
-            ? [...Array(3)].map((e,i) => {
-                return <CardPro favPro={i == 1 && true} key={i} />;
+            ? [...Array(3)].map((e, i) => {
+                return (
+                  <CardPro favPro={i == 1 && true} key={i} dataPro={dataPro} />
+                );
               })
             : [...Array(10)].map((i) => {
-                return <CardPro key={i} />;
+                return <CardPro key={i} dataPro={dataPro} />;
               })}
         </div>
       </div>

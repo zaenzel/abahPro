@@ -5,7 +5,9 @@ import CardListing from "../../components/section/card-listing/CardListing";
 import Since from "../../components/section/since/Since";
 import SliderPartner from "../../components/section/slider-partnership/SliderPartner";
 
+
 const Home = () => {
+
   return (
     <div className="space-y-10">
       <Intro />

@@ -3,21 +3,21 @@ import BathtubIcon from "@mui/icons-material/Bathtub";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 import IconText from "../icon-text/IconText";
 
-const WrapIconPro = () => {
+const WrapIconPro = ({kt, km, area}) => {
   return (
     <div className="flex justify-between text-neutral-700 max-w-xs">
       <IconText>
         <SingleBedIcon fontSize="medium" />
-        <p>2</p>
+        <p>{kt}</p>
       </IconText>
       <IconText>
         <BathtubIcon fontSize="medium" />
-        <p>2</p>
+        <p>{km}</p>
       </IconText>
       <IconText>
         <ZoomOutMapIcon fontSize="medium" />
         <p>
-          200 m<sup>2</sup>
+          {area} m<sup>2</sup>
         </p>
       </IconText>
     </div>
