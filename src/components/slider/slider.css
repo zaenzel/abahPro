@@ -1,5 +1,5 @@
 .image-detail {
-    @apply w-full min-h-full max-h-80 md:rounded-2xl object-cover bg-center duration-500
+    @apply w-full min-h-full max-h-96 md:rounded-2xl object-cover bg-center duration-500
 }
 
 .next-slide {

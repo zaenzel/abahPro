@@ -3,9 +3,10 @@ import Button from "../button/Button";
 import HamburgerBtn from "../hamburger-btn/HamburgerBtn";
 import ModalNav from "../modals/ModalNav";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -43,8 +44,8 @@ const Navbar = () => {
           <Link to={"/"}>AbahPro</Link>
         </h1>
         <ul className="items-nav hidden sm:flex">
-          <li>Daftar Propeti</li>
-          <li>Tentang Kami</li>
+          <li onClick={(e) => navigate("/list")}>Daftar Propeti</li>
+          <li>Blog</li>
           <li>
             <Button word={"Hubungi Kami"} />
           </li>

@@ -29,7 +29,7 @@ const Slider = ({ images }) => {
   };
 
   return (
-    <div className="py-5 relative group">
+    <div className="py-5 md:py-0 relative group">
       <img src={images[currentIndex]} alt="" className="image-detail" />
       <div className="next-slide" onClick={nextSlide}>
         <ArrowForwardIosOutlined />

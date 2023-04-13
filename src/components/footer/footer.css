@@ -3,7 +3,7 @@
 }
 
 .wrap-footer{
-    @apply p-10 text-white space-y-5
+    @apply py-10 px-5 text-white space-y-5
 }
 
 .wrap-items-footer{
@@ -15,7 +15,7 @@
 }
 
 .item-footer h5{
-    @apply text-xl font-medium
+    @apply text-lg sm:text-xl font-bold
 }
 
 .item-footer p{
