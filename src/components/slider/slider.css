@@ -1,0 +1,19 @@
+.image-detail {
+    @apply w-full min-h-full max-h-96 md:rounded-2xl object-cover bg-center duration-500
+}
+
+.next-slide {
+    @apply md:hidden md:group-hover:flex items-center rounded-full absolute top-1/2 -translate-x-0 -translate-y-1/2 right-0 text-2xl p-2 bg-black/40 text-white cursor-pointer
+}
+
+.prev-slide{
+    @apply md:hidden md:group-hover:flex items-center rounded-full absolute top-1/2 -translate-x-0 -translate-y-1/2 left-0 text-2xl p-2 bg-black/40 text-white cursor-pointer
+}
+
+.wrap-dot-slide{
+    @apply absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2 justify-center bg-black/30 px-2 rounded-full
+}
+
+.item-dot-slide{
+    @apply cursor-pointer text-white transition-all duration-500
+}

@@ -1,11 +1,9 @@
 import "./cardPro.css";
 import imagePro from "/images/rumah.jpg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import SingleBedIcon from "@mui/icons-material/SingleBed";
-import BathtubIcon from "@mui/icons-material/Bathtub";
-import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 import IconText from "../../icon-text/IconText";
 import { Link } from "react-router-dom";
+import WrapIconPro from "../../wrap-icon-properti/WrapIconPro";
 
 const CardPro = ({ favPro }) => {
   return (
@@ -24,22 +22,7 @@ const CardPro = ({ favPro }) => {
               <p>Serpong, Tanggerang</p>
             </IconText>
             <h3 className="price-cardPro">Rp 4.000.000</h3>
-            <div className="desc flex justify-between gap-5">
-              <IconText>
-                <SingleBedIcon fontSize="medium" />
-                <p>2</p>
-              </IconText>
-              <IconText>
-                <BathtubIcon fontSize="medium" />
-                <p>2</p>
-              </IconText>
-              <IconText>
-                <ZoomOutMapIcon fontSize="medium" />
-                <p>
-                  200 m<sup>2</sup>
-                </p>
-              </IconText>
-            </div>
+           <WrapIconPro />
           </div>
         </div>
       </div>

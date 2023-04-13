@@ -1,0 +1,19 @@
+.desc-detail {
+    @apply px-5 md:px-0 flex flex-col gap-3
+}
+
+.title-desc {
+    @apply text-xl sm:text-xl lg:text-3xl font-bold
+}
+
+.price-detail{
+    @apply text-xl text-color-tersier font-medium
+}
+
+.desc{
+    @apply flex flex-col gap-2 mt-5
+}
+
+.desc h1{
+    @apply font-semibold
+}

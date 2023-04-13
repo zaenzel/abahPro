@@ -15,11 +15,11 @@ const Footer = () => {
   return (
     <div className="container-footer">
       <div className="wrap-footer">
-        <h1 className="title text-2xl">AbahPro</h1>
+        <h1 className="title text-2xl sm:text-3xl">AbahPro</h1>
         <hr />
         <div className="wrap-items-footer">
           <div className="item-footer">
-            <h5>Office</h5>
+            <h5>Kantor</h5>
             <IconText>
               <LocationOn />
               <p>
@@ -29,30 +29,30 @@ const Footer = () => {
             </IconText>
           </div>
           <div className="item-footer">
-            <h5>Contact</h5>
+            <h5>Hubungi</h5>
             <ul className="wrap-icon-contact">
               <li>
                 <IconText>
                   <Call />
-                  <p>082389229830</p>
+                  <p><span className="font-semibold">Telepon:</span> 082389229830</p>
                 </IconText>
               </li>
               <li>
                 <IconText>
                   <WhatsApp />
-                  <p>082389229830</p>
+                  <p><span className="font-semibold">Whatsapp:</span> 082389229830</p>
                 </IconText>
               </li>
               <li>
                 <IconText>
                   <Email />
-                  <p>abahpro@gmail.com</p>
+                  <p><span className="font-semibold">E-mail:</span> abahpro@gmail.com</p>
                 </IconText>
               </li>
             </ul>
           </div>
           <div className="item-footer">
-            <h5>Follow us</h5>
+            <h5>Media Sosial</h5>
             <div className="icon-medsos">
               <Facebook fontSize="large" />
               <Instagram fontSize="large" />
