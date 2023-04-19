@@ -8,7 +8,8 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Button from "../../components/button/Button";
 import WrapIconPro from "../../components/wrap-icon-properti/WrapIconPro";
 import { useParams } from "react-router-dom";
-import properti from "../../properti";
+import properti from "../../data/properti";
+import CardCall from "../../components/card/card-call/CardCall";
 
 const Detail = () => {
   const { id } = useParams();
@@ -46,13 +47,7 @@ const Detail = () => {
       </div>
 
       <aside className="container mx-auto px-3 mt-10 md:mt-0 basis-1/3 min-w-fit">
-        <div className="p-5 text-center space-y-3 border shadow-sm rounded-lg">
-          <h2 className="text-xl lg:text-2xl font-bold">Ingin tanya-tanya?</h2>
-          <h5 className="text-color-ADADAD text-sm">
-            Butuh penjelasan lebih lanjut?
-          </h5>
-          <Button word={"Hubungi Kami"} />
-        </div>
+        <CardCall />
       </aside>
     </div>
   );

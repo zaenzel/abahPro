@@ -12,7 +12,7 @@ const CardPro = ({ favPro, dataPro }) => {
   })
 
   return (
-    <Link to={`/detail/${dataPro[0].id}`}>
+    <Link to={`properti/${dataPro.id}`}>
       <div
         className={`container-cardPro ${
           favPro && "border-2 rounded-2xl border-color-tersier xl:mb-10"
@@ -20,18 +20,18 @@ const CardPro = ({ favPro, dataPro }) => {
       >
         <div className="wrap-items-cardPro">
           <img
-            src={dataPro[0].image}
+            src={dataPro.image}
             alt="propety-image"
             className="image-cardPro"
           />
           <div className="desc-cardPro">
-            <h1 className="title-cardPro">{dataPro[0].name}</h1>
+            <h1 className="title-cardPro">{dataPro.name}</h1>
             <IconText gray={true}>
               <LocationOnIcon />
-              <p>{dataPro[0].location}</p>
+              <p>{dataPro.location}</p>
             </IconText>
-            <h3 className="price-cardPro">{rupiah.format(dataPro[0].price)}</h3>
-            <WrapIconPro kt={dataPro[0].bedroom} km={dataPro[0].bathroom} area={dataPro[0].area} />
+            <h3 className="price-cardPro">{rupiah.format(dataPro.price)}</h3>
+            <WrapIconPro kt={dataPro.bedroom} km={dataPro.bathroom} area={dataPro.area} />
           </div>  
         </div>
       </div>

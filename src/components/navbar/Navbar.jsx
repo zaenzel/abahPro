@@ -44,8 +44,8 @@ const Navbar = () => {
           <Link to={"/"}>AbahPro</Link>
         </h1>
         <ul className="items-nav hidden sm:flex">
-          <li onClick={(e) => navigate("/list")}>Daftar Propeti</li>
-          <li>Blog</li>
+          <li onClick={(e) => navigate("/listproperti")}>Daftar Propeti</li>
+          <li onClick={(e) => navigate("/listblog")}>Blog</li>
           <li>
             <Button word={"Hubungi Kami"} />
           </li>
