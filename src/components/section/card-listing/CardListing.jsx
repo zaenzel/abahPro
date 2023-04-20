@@ -2,31 +2,44 @@ import React from "react";
 import CardPro from "../../card/card-property/CardPro";
 import "./cardListing.css";
 import { Link } from "react-router-dom";
-import properti from "../../../properti";
+import properti from "../../../data/properti";
+import blogs from "../../../data/blogs";
+import CardBlog from "../../card/card-blog/CardBlog";
 
-const RecomendPro = ({ recomendPro }) => {
-  const dataPro = properti
+const CardListing = ({ recomendPro, isBlog }) => {
+  const dataPro = properti;
+  const topPro = dataPro.slice(0, 3);
+  const dataBlog = blogs;
+
   return (
     <section className="container-recomendPro">
       <div className="wrap-items-recomendPro">
         <div className="wrap-title-recomendPro">
           <div className="right-title-recomendPro">
-            <h1>Rekomendasi Properti</h1>
-            <p>Beberapa properti yang terbaik</p>
+            <h1>
+              {isBlog
+                ? "Artkel seputar dunia properti"
+                : "Rekomendasi Properti"}
+            </h1>
+            <p>
+              {isBlog
+                ? "Beberapa bahan bacaan tentang properti"
+                : "Beberapa properti yang terbaik"}
+            </p>
           </div>
           <p className={`${!recomendPro && "hidden"} left-title-recomendPro`}>
-            <Link to={"list"}>Lihat Lebih...</Link>
+            <Link to={"listproperti"}>Lihat Lebih...</Link>
           </p>
         </div>
         <div className="wrap-cardPro">
-          {recomendPro
-            ? [...Array(3)].map((e, i) => {
-                return (
-                  <CardPro favPro={i == 1 && true} key={i} dataPro={dataPro} />
-                );
+          {isBlog
+            ? dataBlog.map((e, i) => <CardBlog key={i} blogs={e} />)
+            : recomendPro
+            ? topPro.map((e, i) => {
+                return <CardPro favPro={i == 1 && true} key={i} dataPro={e} />;
               })
-            : [...Array(10)].map((i) => {
-                return <CardPro key={i} dataPro={dataPro} />;
+            : dataPro.map((e, i) => {
+                return <CardPro key={i} dataPro={e} />;
               })}
         </div>
       </div>
@@ -34,4 +47,4 @@ const RecomendPro = ({ recomendPro }) => {
   );
 };
 
-export default RecomendPro;
+export default CardListing;

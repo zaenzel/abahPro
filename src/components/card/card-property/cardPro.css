@@ -11,7 +11,7 @@
 }
 
 .title-cardPro{
-    @apply truncate text-lg text-color-040405 font-medium
+    @apply text-lg text-color-040405 font-medium
 }
 
 .price-cardPro{
