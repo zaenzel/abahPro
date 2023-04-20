@@ -1,19 +1,23 @@
+import { useParams } from "react-router-dom";
 import CardCall from "../../components/card/card-call/CardCall";
-import imgBlog from "/images/home.jpg";
-import "./blog.css";
+import blogs from "../../data/blogs";
 
 const Blog = () => {
+  const { id } = useParams();
+  const dataBlog = blogs;
+
   return (
     <div className="md:flex md:container md:mx-auto">
       <div className="basis-2/3 space-y-5">
-        <img src={imgBlog} alt="image-blog" className="image-detail" />
-        <div className="">
-          <h1 className="">Tips & Trick Membeli Rumah</h1>
+        <img
+          src={dataBlog[id - 1].image}
+          alt="image-blog"
+          className="w-full max-h-72 md:rounded-2xl object-cover bg-center"
+        />
+        <div className="desc-detail">
+          <h1 className="title-desc">{dataBlog[id - 1].title}</h1>
           <p className="">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            vitae quia suscipit mollitia error fugiat voluptas beatae dolorum
-            consequatur, vel libero incidunt ducimus aliquam possimus
-            consectetur adipisci nostrum esse exercitationem!
+          {dataBlog[id - 1].content}
           </p>
         </div>
       </div>

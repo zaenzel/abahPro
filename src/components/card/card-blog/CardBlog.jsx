@@ -1,22 +1,13 @@
 import { Link } from "react-router-dom";
 import "./cardBlog.css";
 
-const CardBlog = () => {
+const CardBlog = ({ blogs }) => {
   return (
-    <Link to={`blog/${1}`}>
+    <Link to={`blog/${blogs.id}`}>
       <div className="wrap-items-cardBlog max-w-xs">
-        <img
-          src="./images/home.jpg"
-          alt="image-blog"
-          className="image-cardPro"
-        />
-        <h1 className="title-cardBlog">Tips & trick memilih rumah</h1>
-        <p className="summary-blog">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-          error blanditiis ipsa cum perferendis fugiat aut id voluptatibus odio
-          suscipit non laborum minus saepe optio, inventore, asperiores aliquid
-          ut libero.
-        </p>
+        <img src={blogs.image} alt="image-blog" className="image-cardPro" />
+        <h1 className="title-cardBlog">{blogs.title}</h1>
+        <p className="summary-blog">{blogs.content}</p>
         <p className="continue-reeding">Lanjutkan membaca</p>
       </div>
     </Link>

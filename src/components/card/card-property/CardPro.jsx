@@ -12,7 +12,7 @@ const CardPro = ({ favPro, dataPro }) => {
   })
 
   return (
-    <Link to={`properti/${dataPro.id}`}>
+    <Link to={`/listproperti/properti/${dataPro.id}`}>
       <div
         className={`container-cardPro ${
           favPro && "border-2 rounded-2xl border-color-tersier xl:mb-10"
