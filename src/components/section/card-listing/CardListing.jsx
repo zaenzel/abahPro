@@ -42,6 +42,8 @@ const CardListing = ({ recomendPro, isBlog }) => {
                 return <CardPro key={i} dataPro={e} />;
               })}
         </div>
+
+      
       </div>
     </section>
   );

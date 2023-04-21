@@ -1,20 +1,13 @@
 import React, { useState } from "react";
-import foto1 from "/images/home3/foto1.jpg"
-import foto2 from "/images/home3/foto2.jpg"
-import foto3 from "/images/home3/foto3.jpg"
 import {
-  ArrowBackIosNewOutlined,
   ArrowBackIosOutlined,
   ArrowForwardIosOutlined,
   FiberManualRecord,
-  FiberManualRecordOutlined,
 } from "@mui/icons-material";
 import "./slider.css";
 
 const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const photos = [foto1, foto2, foto3]
-  console.log(images)
 
   const nextSlide = () => {
     const isLastSlide = currentIndex === images.length - 1;
