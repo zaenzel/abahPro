@@ -3,7 +3,7 @@
 }
 
 .title-cardBlog{
-    @apply text-xl font-semibold text-color-040405
+    @apply text-xl font-medium text-color-040405
 }
 
 .summary-blog{
@@ -16,5 +16,5 @@
 }
 
 .continue-reeding{
-    @apply hidden md:block text-end mt-5 mb-2 text-sm hover:text-color-tersier
+    @apply hidden md:block text-end mt-5 mb-2 text-sm text-color-ADADAD hover:text-color-tersier hover:font-bold
 }

@@ -1,5 +1,4 @@
 import "./cardPro.css";
-import imagePro from "/images/rumah.jpg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import IconText from "../../icon-text/IconText";
 import { Link } from "react-router-dom";
@@ -20,7 +19,7 @@ const CardPro = ({ favPro, dataPro }) => {
       >
         <div className="wrap-items-cardPro">
           <img
-            src={dataPro.image}
+            src={dataPro.images[0]}
             alt="propety-image"
             className="image-cardPro"
           />
