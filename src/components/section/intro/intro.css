@@ -1,5 +1,5 @@
 .container-hero{
-    @apply p-5 xl:px-28
+    @apply p-5 py-6 xl:px-28
 }
 
 .wrap-hero{
